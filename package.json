@@ -1,0 +1,7 @@
+{
+    "scripts": {
+        "chainlit": "pipenv run chainlit run main.py -w",
+        "docker-build": "pipenv requirements > requirements.txt && docker build -t psychic-octo-umbrella .",
+        "docker-run": "docker run -p 8000:8000 psychic-octo-umbrella"
+    }
+}
